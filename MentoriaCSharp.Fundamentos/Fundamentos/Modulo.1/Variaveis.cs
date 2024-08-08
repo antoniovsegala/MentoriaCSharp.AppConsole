@@ -26,6 +26,7 @@ namespace MentoriaCSharp.Fundamentos.Fundamentos.Modulo._1
         #region Exemplos de variaveis
 
         String nome;
+        DateTime horaAtual;
 
         #endregion
     }
