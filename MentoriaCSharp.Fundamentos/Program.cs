@@ -1,19 +1,29 @@
 ﻿using MentoriaCSharp.Fundamentos.Fundamentos.Modulo._1;
 using MentoriaCSharp.Fundamentos.Mensageria;
+//A instancia é um ato de criar um novo objeto
+//Exemplo objeto usuario do tipo usuario --- (O nome do objeto tem que ser sugestivo)
+//O comando new Usuario() sinaliza a criação de um novo objeto
+//A partir do nome do objeto acessamos seus dados
 
 Saudacao saudacao = new Saudacao();
-
+Usuario usuario = new Usuario(); //
 saudacao.ExibirSaudacao();
 
-Carro veiculo = new Carro();
 
-veiculo.nome = "Celta";
-veiculo.qtdPorta = 2;
 
-ExemploObjeto usuario = new ExemploObjeto();
+//Console.WriteLine("qual a sua idade?");
+//usuario.VerificaMaioridade(Convert.ToInt16(Console.ReadLine()));
 
-usuario.idade = 1;
-usuario.nome = "Antonio";
-Console.WriteLine(usuario.nome);
+//Console.Clear();
+Console.WriteLine("Digite seu login");
+usuario.VerificarUsuario(Console.ReadLine());
 
-//criar exemplos de objetos.
+Console.Clear();
+
+Console.WriteLine("Digite a sua senha");
+usuario.VerificarSenha(Console.ReadLine());
+
+
+
+
+

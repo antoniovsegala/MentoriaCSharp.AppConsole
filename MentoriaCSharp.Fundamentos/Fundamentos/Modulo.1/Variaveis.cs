@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MentoriaCSharp.Fundamentos.Fundamentos.Modulo._1
 {
-    internal class Variaveis
+    public class Variaveis
     {
         #region Tipos de variáveis
         /*
@@ -20,6 +20,8 @@ namespace MentoriaCSharp.Fundamentos.Fundamentos.Modulo._1
             char nomeVariavel;
             DateTime nomeVariavel;
 
+            variavel global = só existe na classe e enquanto é utilizada
+            vatiavel local = só existe dentro do metodo enquanto for utilizada
         */
         #endregion
 
@@ -27,7 +29,14 @@ namespace MentoriaCSharp.Fundamentos.Fundamentos.Modulo._1
 
         String nome;
         DateTime horaAtual;
-
+        public int idadeUsuario = 6;
+        
+        
         #endregion
+
+
+
+        
     }
 }
+
