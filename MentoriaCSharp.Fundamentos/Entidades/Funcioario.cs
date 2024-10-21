@@ -8,7 +8,6 @@ namespace MentoriaCSharp.Fundamentos.Entidades
 {
     internal class Funcioario
     {
-        //criar variaveis relacionado a funcionario aqui
-        //criar variaveis nomeUsuario, tipoUsuario e senhaUsuario
+        //criar propriedades que condiz com o funcionario
     }
 }

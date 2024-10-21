@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MentoriaCSharp.Fundamentos.Servicos
 {
-    public static class SvcUsuario
+    public  class SvcUsuario
     {
 
         public static void VerificarUsuario(string nomeUsuario, string senha)

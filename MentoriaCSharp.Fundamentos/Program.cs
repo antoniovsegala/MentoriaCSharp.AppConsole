@@ -9,21 +9,37 @@
 #endregion
 
 
+#region exemplo
 
+//Console.WriteLine("Digite seu login");
+//string usrLogin = Console.ReadLine();
 
-Console.WriteLine("Digite seu login");
-string usrLogin = Console.ReadLine();
+//Console.WriteLine("Digite a sua senha");
+//string senha = Console.ReadLine();
 
-Console.WriteLine("Digite a sua senha");
-string senha = Console.ReadLine();
+//Usuario novoUsuario = new Usuario();
+//novoUsuario.Nome = usrLogin;
+//novoUsuario.Senha = senha;
 
-Usuario novoUsuario = new Usuario();
-novoUsuario.Nome = usrLogin;
-novoUsuario.Senha = senha;
-
-
+#endregion
 //Estudar a Entidade e a classe de serviço para o usuario
 
 
+List<Usuario> usuarios = new()
+{
+    new Usuario{Nome = "Pedro",Senha = "123456"},
+    new Usuario{Nome = "Joao", Senha = "789456"},
+    new Usuario{Nome = "Antonio", Senha = "589632"},
+    new Usuario{Nome = "Eduardo", Senha = "789632"},
+    new Usuario{Nome = "Augusto", Senha = "782169"}
+};
+// Verificar nome e senha a partir que um usuario digite 
+// Fazer validação usuario e senha
+// Usar lógica
+foreach (var usuario in usuarios)
+{
+    Console.WriteLine(usuario.Nome + usuario.Senha);
+}
 
-
+//criar tres tipos de lista
+//int, string e objeto 
