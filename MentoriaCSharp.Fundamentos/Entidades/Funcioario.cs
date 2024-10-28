@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MentoriaCSharp.Fundamentos.Enumeracao;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,8 +7,10 @@ using System.Threading.Tasks;
 
 namespace MentoriaCSharp.Fundamentos.Entidades
 {
-    internal class Funcioario
+    public class Funcioario
     {
-        //criar propriedades que condiz com o funcionario
+        public ETipoFuncionario Tipo { get; set; }
+        public DateTime DataContracao { get; set; }
+        public bool Ativo { get; set; }
     }
 }

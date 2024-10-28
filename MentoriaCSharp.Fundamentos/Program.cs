@@ -1,4 +1,7 @@
 ﻿using MentoriaCSharp.Fundamentos.Entidades;
+using MentoriaCSharp.Fundamentos.Servicos;
+using MentoriaCSharp.Fundamentos.SvcUsuario;
+using MentoriaCSharp.Fundamentos.SvcFuncionario;
 //A instancia é um ato de criar um novo objeto
 //Exemplo objeto usuario do tipo usuario --- (O nome do objeto tem que ser sugestivo)
 //O comando new Usuario() sinaliza a criação de um novo objeto
@@ -9,37 +12,32 @@
 #endregion
 
 
-#region exemplo
+// Verificar nome e senha a partir que um usuario digite 
+// Fazer validação usuario e senha
+// Usar lógica
 
-//Console.WriteLine("Digite seu login");
-//string usrLogin = Console.ReadLine();
+#region login
 
-//Console.WriteLine("Digite a sua senha");
-//string senha = Console.ReadLine();
+string nmUsuario = "";
+string snha = "";
 
-//Usuario novoUsuario = new Usuario();
-//novoUsuario.Nome = usrLogin;
-//novoUsuario.Senha = senha;
+Console.WriteLine("Digite seu login");
+nmUsuario = Console.ReadLine();
+
+Console.WriteLine("Digite a sua senha");
+snha = Console.ReadLine();
+
+
+SvcUsuario.VerificarUsuario(nmUsuario, snha);
+
+
 
 #endregion
 //Estudar a Entidade e a classe de serviço para o usuario
 
 
-List<Usuario> usuarios = new()
-{
-    new Usuario{Nome = "Pedro",Senha = "123456"},
-    new Usuario{Nome = "Joao", Senha = "789456"},
-    new Usuario{Nome = "Antonio", Senha = "589632"},
-    new Usuario{Nome = "Eduardo", Senha = "789632"},
-    new Usuario{Nome = "Augusto", Senha = "782169"}
-};
-// Verificar nome e senha a partir que um usuario digite 
-// Fazer validação usuario e senha
-// Usar lógica
-foreach (var usuario in usuarios)
-{
-    Console.WriteLine(usuario.Nome + usuario.Senha);
-}
+
 
 //criar tres tipos de lista
 //int, string e objeto 
+//Criar enum para tipos de usuario
